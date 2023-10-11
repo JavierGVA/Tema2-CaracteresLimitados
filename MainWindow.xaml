@@ -1,0 +1,20 @@
+﻿<Window x:Class="Tema2_CaracteresLimitados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CaracteresLimitados"
+        mc:Ignorable="d"
+        Title="Caracteres Limitados" Height="337" Width="662">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF4758EC" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="cajaTexto" HorizontalAlignment="Left" Margin="52,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="543" Height="206" PreviewKeyDown="TextBox_PreviewKeyDown" FontSize="14" MaxLength="140" IsReadOnly ="False" AcceptsReturn="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="566,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="es-es" Text="/140"/></TextBlock>
+        <TextBlock x:Name="contador" HorizontalAlignment="Left" Margin="526,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  RenderTransformOrigin="2.299,0.656" FontSize="14" TextAlignment="Right" Width="40"/>
+    </Grid>
+</Window>
